@@ -2,6 +2,8 @@
 
 namespace NW\WebService\References\Operations\Notification\Services;
 
+use NW\WebService\References\Operations\Notification\Enum\ContractorTypes;
+
 /**
  * Class Contractor
  *
@@ -15,7 +17,7 @@ class Contractor
 {
     public $id;
     public $name;
-    public $type = 0; // Customer by default
+    public $type = ContractorTypes::TYPE_CUSTOMER; // Customer by default
 
     /**
      * Get contractor by id
